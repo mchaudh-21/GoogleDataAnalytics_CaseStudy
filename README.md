@@ -45,11 +45,11 @@ Visual insights were generated using `ggplot2` and saved to a charts folder:
 **Conclusion:**
 
 Casual riders and annual riders show clear differences in spending behavior. 
-Trends in my charts (see *divvy_analysis_charts*) show that casual riders take longer, less frequent rides, especially on weekends. This an suggest a leisure-based usage rather than out of neccesity. 
+Trends in my charts (see `divvy_analysis_charts`) show that casual riders take longer, less frequent rides, especially on weekends. This an suggest a leisure-based usage rather than out of neccesity. 
 Members ride more frequently but for shorter durations, which suggests that they likely use the service for commuting or as part of a daily routine. 
 Overall, these trends suggest that casual riders could be tourists or families that use the service for sightseeing or less routinely activities. 
 Annual members are more than likely composed of working adults that use the service as a main mode of transportation. 
-To best maximize subscription to this service, marketing should be increased on peak casual rider times, like weekends (Thursday-Sunday, see *avg_ride_by_day.png*), or peak months (March, see *frequency_by_month.png*)
+To best maximize subscription to this service, marketing should be increased on peak casual rider times, like weekends (Thursday-Sunday, see `avg_ride_by_day.png`), or peak months (March, see `frequency_by_month.png`)
 
 **Recommendations:**
 1) Increase pricing of single ride or day passes: This will incentive casual riders who frequently use the service to switch to a membership and overall save money. 
