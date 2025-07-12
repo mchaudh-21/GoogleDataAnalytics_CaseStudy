@@ -42,7 +42,8 @@ Visual insights were generated using `ggplot2` and saved to a charts folder:
 - Peak usage time across the year by customer type
 
 ## 🔎 Findings
-Conclusion:
+**Conclusion:**
+
 Casual riders and annual riders show clear differences in spending behavior. 
 Trends in my charts show that casual riders take longer, less frequent rides, especially on weekends. This an suggest a leisure-based usage rather than out of neccesity. 
 Members ride more frequently but for shorter durations, which suggests that they likely use the service for commuting or as part of a daily routine. 
@@ -50,7 +51,7 @@ Overall, these trends suggest that casual riders could be tourists or families t
 Annual members are more than likely composed of working adults that use the service as a main mode of transportation. 
 To best maximize subscription to this service, marketing should be increased on peak casual rider times, like weekends (Thursday-Sunday, see avg_ride_by_day.png), or peak months (March, see frequency_by_month.png)
 
-Recommendations:
+**Recommendations:**
 1) Increase pricing of single ride or day passes: This will incentive casual riders who frequently use the service to switch to a membership and overall save money. 
 2) Promote marketing at peak timings (weekends and warmer months). 
 3) Use digital campaigns focused on touristy activities and locations

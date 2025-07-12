@@ -24,7 +24,6 @@ q1_2019_clean <- q1_2019 %>%
     member_casual = usertype,
     day_of_week = days_of_week
   ) %>%
-  # Select only the columns that exist in q1_2020
   select(
     ride_id, started_at, ended_at,
     start_station_name, start_station_id,
@@ -32,7 +31,7 @@ q1_2019_clean <- q1_2019 %>%
     member_casual, ride_length, day_of_week
   )
 
-# Standardize member_casual values
+# Standardize rider types into member and casual
 q1_2019_clean <- q1_2019_clean %>%
   mutate(member_casual = case_when(
     member_casual == "Subscriber" ~ "member",
@@ -40,7 +39,7 @@ q1_2019_clean <- q1_2019_clean %>%
     TRUE ~ member_casual
   ))
 
-# Convert ride_id to character in both datasets
+# Type error, typecast 2019 column for ride_id
 q1_2019_clean <- q1_2019_clean %>%
   mutate(ride_id = as.character(ride_id))
 
@@ -68,7 +67,6 @@ summary_stats <- divvy_df %>%
             max_ride = max(ride_length, na.rm = TRUE),
             total_rides = n())
 
-# Bar chart of avg ride length by user type
 ggplot(summary_stats, aes(x = member_casual, y = avg_ride, fill = member_casual)) +
   geom_col() +
   labs(title = "Average Ride Length by User Type", y = "Average Ride Length (min)", x = "") +
